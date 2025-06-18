@@ -73,3 +73,4 @@ export const AVAILABLE_COMPONENTS: UiComponent[] = [
     defaultProps: { orientation: 'horizontal' },
   },
 ];
+

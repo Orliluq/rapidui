@@ -1,4 +1,3 @@
-// use server'
 "use server";
 /**
  * @fileOverview Generates UI code snippets based on a text description.

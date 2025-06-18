@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 RapidUI
 
-## Getting Started
+¡Bienvenido a **RapidUI**!  
+El playground visual donde tus ideas de UI cobran vida en segundos y la IA te regala el código listo para copiar y pegar.  
+¿Cansado de escribir `<div>` tras `<div>`? ¡Arrastra, suelta, edita y deja que la magia suceda!
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🤖 ¿Qué es RapidUI?
+
+RapidUI es un generador visual de interfaces de usuario (UI) potenciado por IA.  
+- Arrastra componentes (botones, inputs, cards, imágenes, headings, párrafos, etc.) a un canvas.
+- Personaliza sus propiedades en tiempo real.
+- Haz clic en "Generar Código" y obtén el código React + TailwindCSS listo para usar.
+- ¡Copia y pégalo en tu proyecto favorito!
+
+Ideal para prototipado rápido, inspiración de layouts, y para quienes aman ver resultados inmediatos.
+
+---
+
+## 🧩 Características
+
+- **Editor visual drag & drop**: Construye tu UI como si jugaras con bloques.
+- **Propiedades editables**: Cambia textos, colores, tamaños y más.
+- **Generación de código con IA**: Obtén código limpio, moderno y funcional.
+- **Vista previa instantánea**: Ve cómo quedará tu UI antes de exportar.
+- **Componentes personalizables**: Añade, elimina y reordena elementos fácilmente.
+- **Licencia MIT**: ¡Úsalo, modifícalo y compártelo libremente!
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```
+src/
+  ├── ai/                # Flujos y prompts de IA (Genkit)
+  ├── app/               # Entrypoint Next.js y estilos globales
+  ├── components/
+  │     ├── editor/      # Lógica del editor visual y generación de código
+  │     ├── layout/      # Header, Footer, etc.
+  │     └── ui/          # Componentes UI reutilizables (botón, card, etc.)
+  ├── hooks/             # Custom hooks (ej: use-toast)
+  ├── types/             # Tipos TypeScript
+  └── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖼️ Diagrama UML Interactivo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```mermaid
+flowchart TD
+    A[Usuario] -->|Arrastra| B[ComponentLibrary]
+    B --> C[Canvas]
+    C --> D[PropertiesPreviewTabs]
+    D -->|Edita props| C
+    C --> E[GeneratedCodePanel]
+    E -->|Genera código| F[AI (Genkit)]
+    F -->|Devuelve código| E
+    E -->|Copia| G[Portapapeles]
+    subgraph UI
+      B
+      C
+      D
+      E
+    end
+```
 
-## Learn More
+> Puedes visualizar este diagrama en [Mermaid Live Editor](https://mermaid.live).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ ¿Cómo lo uso?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clona el repo y ejecuta:
+   ```bash
+   npm install
+   npm run dev
+   ```
+2. Abre [http://localhost:3000](http://localhost:3000)
+3. ¡Arrastra componentes, edita, genera código y sé feliz!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License.  
+Hecho con 💙 por Orli Dun y la comunidad.  
+¡Contribuciones y PRs son bienvenidos!
+
+---

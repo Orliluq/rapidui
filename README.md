@@ -55,7 +55,7 @@ flowchart TD
     C --> D[PropertiesPreviewTabs]
     D -->|Edita props| C
     C --> E[GeneratedCodePanel]
-    E -->|Genera código| F[AI (Genkit)]
+    E -->|Genera código| F[AI Genkit]
     F -->|Devuelve código| E
     E -->|Copia| G[Portapapeles]
 

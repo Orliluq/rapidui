@@ -58,12 +58,12 @@ flowchart TD
     E -->|Genera código| F[AI (Genkit)]
     F -->|Devuelve código| E
     E -->|Copia| G[Portapapeles]
-    
+
     subgraph UI
-      B
-      C
-      D
-      E
+        B
+        C
+        D
+        E
     end
 ```
 
